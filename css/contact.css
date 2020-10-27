@@ -1,0 +1,54 @@
+#mapid {
+  height: auto;
+  width: 100%;
+}
+
+.wrapper .main-font {
+  padding: 1rem;
+}
+
+.wrapper .info h3 {
+  padding: 0;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.info > :first-child {
+  padding: 0 1rem;
+  width: 50%;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+h3:first-of-type {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .info > :first-child {
+    width: 70%;
+  }
+  .wrapper {
+    min-height: 83vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    min-height: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info {
+    flex-direction: column-reverse;
+  }
+  #mapid {
+    height: 300px;
+  }
+}

@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Heartland";
+  src: url("../fonts/Heartland_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --brand-pink: #d6a0bc;
+  --brand-green: #7b7b6c;
+  --brand-grey: #9c9d9e;
+  --brand-black: #36322b;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--brand-black);
+}
+
+.logo {
+  max-width: 325px;
+  padding: 1rem;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header-main a {
+  font-size: 1.3rem;
+  color: var(--brand-green);
+}
+
+.main-font,
+i {
+  font-family: "Heartland", Arial, Helvetica, sans-serif;
+  color: var(--brand-pink);
+}
+
+i {
+  padding: 0 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--brand-pink);
+}
+
+h3 ~ a:hover {
+  color: black;
+}
+
+nav a {
+  padding: 1rem 2rem;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 1rem auto;
+}
+
+.button {
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+  margin: 0 1rem 5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  min-width: 120px;
+  border: 2px solid var(--brand-pink);
+  background-color: var(--brand-pink);
+  font-weight: bold;
+  text-align: center;
+}
+
+.button:hover {
+  border: 2px solid #a97a92;
+  background-color: #a97a92;
+  color: white;
+}
+
+footer {
+  background-color: var(--brand-grey);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul i {
+  color: var(--brand-black);
+}
+
+ul a:hover {
+  color: var(--brand-black);
+}
+
+.burger.fas {
+  display: none;
+}
+
+#mobileNav {
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  top: 95%;
+  left: 0;
+  right: 0;
+  transition: height 1s ease-in-out;
+  height: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+#mobileNav li {
+  padding-bottom: 1rem;
+}
+
+.menu-open {
+  height: auto;
+  pointer-events: initial;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    max-width: 250px;
+  }
+  ul {
+    font-size: 0.9rem;
+    padding-inline-start: 0px;
+  }
+  .wrapper {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    max-width: 235px;
+  }
+  .header-main a {
+    font-size: 1rem;
+  }
+  nav a {
+    padding: 1rem;
+  }
+  footer {
+    justify-content: space-between;
+    padding: 1rem 0.8rem;
+  }
+  ul {
+    font-size: 0.7rem;
+  }
+  i {
+    padding: 0 0 0 0.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 43%;
+  }
+  .burger.fas {
+    display: block;
+    color: var(--brand-green);
+    font-size: 1.3rem;
+    padding: 0 1.3rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+  ul {
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 50%;
+  }
+  i {
+    padding-left: 0;
+    padding-right: 0.5rem;
+  }
+}

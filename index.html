@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Railway Yarns</title>
+    <meta
+      name="description"
+      content="Wool shop with a rentable crafting space based in Ledbury, Herefordshire UK. Selling a wide range of yarns and tools"
+    />
+    <meta
+      name="keywords"
+      content="yarn,wool,knitting,crocheting,crafting,craft,ledbury,shop"
+    />
+
+    <!-- Twitter Card data -->
+    <meta
+      name="twitter:card"
+      value="Wool shop with a rentable crafting space based in Ledbury, Herefordshire UK. Selling a wide range of yarns and tools"
+    />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Railway Yarns" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.railwayyarns.co.uk/" />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta
+      property="og:description"
+      content="Wool shop with a rentable crafting space based in Ledbury, Herefordshire UK. Selling a wide range of yarns and tools"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <link rel="icon" type="image/png" href="assets/tab_icon.png" />
+    <script
+      src="https://kit.fontawesome.com/7307532b1d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header-main">
+      <img class="logo" alt="Railway Yarns logo" src="assets/logo.svg" />
+      <nav>
+        <a class="main-font" href="./index.html">Home</a>
+        <a class="main-font" href="./contact.html">Get in Touch</a>
+        <a class="main-font" href="./workshop.html">Crafting Space</a>
+        <a class="main-font" href="./wool.html">Our Wool</a>
+      </nav>
+
+      <!-- Collapsible content -->
+      <nav id="mobileNav">
+        <ul class="menu-open">
+          <li>
+            <a class="main-font" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="main-font" href="./contact.html">Get in Touch</a>
+          </li>
+          <li class="active">
+            <a class="main-font" href="./workshop.html">Crafting Space</a>
+          </li>
+          <li>
+            <a class="main-font" href="./wool.html">Our Wool</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Collapsible content -->
+
+      <i onclick="toggleNavbar()" class="burger fas fa-bars"></i>
+    </header>
+    <main>
+      <section class="jumbo">
+        <div class="img-wrapper">
+          <img alt="brown wool on a shelf" src="assets/wool1.jpg" />
+          <img alt="green wool on a shelf" src="assets/wool2.jpg" />
+          <img alt="pink wool on a shelf" src="assets/wool5.jpg" />
+          <img alt="multi-coloured wool on a shelf" src="assets/wool6.jpg" />
+        </div>
+
+        <div class="content-wrapper">
+          <h1>
+            An independant knitting shop just a few steps from the Ledbury train
+            station...
+          </h1>
+
+          <section>
+            <p>
+              We sell a wide range of wool from the UK and abroad, as well as
+              knitting and crocheting equipment and accessories. We also have a
+              large hireable crafting room
+            </p>
+          </section>
+
+          <a class="button" href="./wool.html">Our wool</a>
+          <a class="button" href="./contact.html">Find us</a>
+          <a class="button" href="https://www.instagram.com/railwayyarns/"
+            >Follow us</a
+          >
+        </div>
+      </section>
+
+      <section class="insta-wrapper">
+        <img class="insta-logo" alt="instagram logo" src="assets/insta.png" />
+        <div id="instagram-feed"></div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <i class="fas fa-map-marker-alt"></i>
+          Unit 6, Station Industrial Estate, The Homend, Ledbury HR8 1AR
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="tel:+447854863312"
+            ><i class="fas fa-phone"></i>07854 863312</a
+          >
+        </li>
+        <li>
+          <a href="mailto:railwayyarns@hotmail.com?subject = Enquiry">
+            <i class="fas fa-envelope-square"></i>
+            railwayyarns@hotmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/railwayyarns/">
+            <i class="fas fa-at"></i>
+            railwayyarns
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+
+  <script src="js/InstagramFeed.min.js"></script>
+  <script>
+    (function () {
+      new InstagramFeed({
+        username: "railwayyarns",
+        container: document.getElementById("instagram-feed"),
+        display_profile: true,
+        display_biography: true,
+        display_gallery: true,
+        callback: null,
+        styling: true,
+        items: 8,
+        items_per_row: 4,
+        margin: 1,
+        lazy_load: true,
+        on_error: console.error,
+      });
+    })();
+  </script>
+  <script src="js/navBar.js"></script>
+</html>

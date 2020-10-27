@@ -1,0 +1,165 @@
+.jumbo {
+  background-color: var(--brand-green);
+  text-align: center;
+  position: relative;
+}
+
+.jumbo h1 {
+  color: white;
+  font-size: 2rem;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.jumbo img {
+  width: 25%;
+  height: 25%;
+  opacity: 0.5;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 20%;
+  right: 20%;
+  color: white;
+}
+
+.content-wrapper section {
+  font-size: 1.3rem;
+}
+
+#instagram-feed {
+  max-width: 50%;
+  margin: 1rem auto;
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+}
+
+.insta-logo {
+  width: 50px;
+}
+
+.insta-wrapper {
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+  align-items: center;
+  min-height: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .img-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .jumbo img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .content-wrapper section {
+    margin: 4rem 0;
+    font-size: 1.5rem;
+  }
+  #instagram-feed {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    top: 17%;
+    left: 12%;
+    right: 12%;
+  }
+  .header-main a {
+    font-size: 1rem;
+  }
+  nav a {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .jumbo h1 {
+    font-size: 1.5rem;
+  }
+  .content-wrapper section {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  .content-wrapper {
+    top: 5%;
+    left: 5%;
+    right: 5%;
+  }
+  .button {
+    font-size: 1rem;
+    margin: 1rem 0.5rem;
+    min-width: auto;
+  }
+  .instagram_profile_image {
+    display: none;
+  }
+  #instagram-feed {
+    margin: 0 auto;
+  }
+  .insta-wrapper {
+    min-height: 296px;
+  }
+  .insta-logo {
+    width: 40px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

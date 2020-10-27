@@ -1,0 +1,55 @@
+main img {
+  width: 50%;
+}
+
+section {
+  display: flex;
+}
+
+.blurb {
+  padding: 0 4rem;
+}
+
+.block {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--brand-pink);
+  margin: 2rem 0;
+}
+
+.workshop {
+  min-height: 75vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .workshop {
+    min-height: 83vh;
+  }
+  section {
+    flex-direction: column;
+  }
+  main img {
+    width: 100%;
+  }
+  .blurb {
+    padding: 2rem 0 0 0;
+    font-size: 1.1rem;
+  }
+  .blurb div {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workshop {
+    min-height: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .block,
+  .blurb {
+    font-size: 1rem;
+  }
+}
