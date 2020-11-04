@@ -140,6 +140,45 @@ ul a:hover {
   pointer-events: initial;
 }
 
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: var(--brand-green);
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.home .alert {
+  border-radius: unset;
+}
+
+.alert a {
+  color: inherit;
+}
+
+.alert a:hover {
+  color: var(--brand-pink);
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
 @media screen and (max-width: 1024px) {
   .logo {
     max-width: 250px;
@@ -176,9 +215,14 @@ ul a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
   .logo {
     width: 43%;
   }
+
   .burger.fas {
     display: block;
     color: var(--brand-green);
@@ -190,13 +234,25 @@ ul a:hover {
   nav {
     display: none;
   }
+
   ul {
     flex-direction: column;
     padding: 0 1rem;
     width: 50%;
   }
+
   i {
     padding-left: 0;
-    padding-right: 0.5rem;
+    padding-right: 0.1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  footer ul {
+    flex-direction: row;
+    width: initial;
   }
 }

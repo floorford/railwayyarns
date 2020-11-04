@@ -53,8 +53,17 @@
   align-items: center;
   min-height: 600px;
 }
+@media screen and (max-width: 1440px) {
+  .content-wrapper {
+    top: 10%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
+  .content-wrapper {
+    top: 25%;
+  }
+
   .img-wrapper {
     flex-wrap: wrap;
   }
@@ -102,7 +111,7 @@
   }
   .button {
     font-size: 1rem;
-    margin: 1rem 0.5rem;
+    margin: 1rem 0;
     min-width: auto;
   }
   .instagram_profile_image {

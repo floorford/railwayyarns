@@ -52,4 +52,10 @@ section {
   .blurb {
     font-size: 1rem;
   }
+  .blurb div {
+    flex-direction: column;
+  }
+  .block {
+    margin: 0.5rem 0;
+  }
 }
