@@ -72,17 +72,6 @@
       <i onclick="toggleNavbar()" class="burger fas fa-bars"></i>
     </header>
     <main class="home">
-      <div class="alert">
-        <span
-          class="closebtn"
-          onclick="this.parentElement.style.display='none';"
-          >&times;</span
-        >
-        During lockdown we will be open for click and collect ONLY. Please
-        <a href="./contact.html">contact us</a> via phone or email in order to
-        arrange this or for more information.
-      </div>
-
       <section class="jumbo">
         <div class="img-wrapper">
           <img alt="brown wool on a shelf" src="assets/wool1.jpg" />
@@ -149,6 +138,13 @@
 
   <script src="js/InstagramFeed.min.js"></script>
   <script>
+    function getWindowSize() {
+      let d = document,
+        root = d.documentElement,
+        body = d.body;
+      let width = window.innerWidth || root.clientWidth || body.clientWidth;
+      return width;
+    }
     (function () {
       new InstagramFeed({
         username: "railwayyarns",
@@ -159,7 +155,7 @@
         callback: null,
         styling: true,
         items: 12,
-        items_per_row: 4,
+        items_per_row: getWindowSize() <= 768 ? 2 : 4,
         margin: 1,
         lazy_load: true,
         on_error: console.error,

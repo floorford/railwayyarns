@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+#mobileNav {
+  z-index: 1001;
+}
+
 .wrapper .main-font {
   padding: 1rem;
 }
@@ -30,8 +34,9 @@ h3:first-of-type {
 }
 
 @media screen and (max-width: 1024px) {
-  .info > :first-child {
-    width: 70%;
+  .info > :first-child,
+  #mapid {
+    width: 50%;
   }
   .wrapper {
     min-height: 83vh;
@@ -50,5 +55,18 @@ h3:first-of-type {
   }
   #mapid {
     height: 300px;
+    width: 100%;
+  }
+  .info > :first-child {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper .main-font {
+    padding: 1rem 0;
+  }
+  .info > :first-child {
+    padding: 0;
   }
 }

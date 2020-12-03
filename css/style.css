@@ -220,7 +220,7 @@ ul a:hover {
   }
 
   .logo {
-    width: 43%;
+    width: 50%;
   }
 
   .burger.fas {
@@ -254,5 +254,22 @@ ul a:hover {
   footer ul {
     flex-direction: row;
     width: initial;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  footer ul {
+    flex-direction: column;
+  }
+
+  ul {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  li {
+    padding: 0.5rem 0;
   }
 }
