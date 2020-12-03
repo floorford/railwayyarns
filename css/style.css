@@ -33,6 +33,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  background-color: white;
 }
 
 .header-main a {
@@ -137,52 +138,22 @@ ul a:hover {
 
 .menu-open {
   height: auto;
+  width: initial;
   pointer-events: initial;
-}
-
-/* The alert message box */
-.alert {
-  padding: 20px;
-  background-color: var(--brand-green);
-  color: white;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.home .alert {
-  border-radius: unset;
-}
-
-.alert a {
-  color: inherit;
-}
-
-.alert a:hover {
-  color: var(--brand-pink);
-}
-
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
 }
 
 @media screen and (max-width: 1024px) {
   .logo {
     max-width: 250px;
   }
+
+  /* Remove me post fair */
+  nav a,
+  nav a.main-font {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
   ul {
     font-size: 0.9rem;
     padding-inline-start: 0px;
@@ -194,7 +165,14 @@ ul a:hover {
 
 @media screen and (max-width: 768px) {
   .logo {
-    max-width: 235px;
+    max-width: 200px;
+    /* max-width: 235px; */
+  }
+  /* change post fair */
+  nav a,
+  nav a.main-font {
+    padding: 0.7rem;
+    font-size: 0.8rem;
   }
   .header-main a {
     font-size: 1rem;
@@ -221,6 +199,13 @@ ul a:hover {
 
   .logo {
     width: 50%;
+  }
+
+  /* change post fair */
+  nav a,
+  nav a.main-font {
+    padding: 2rem 1rem;
+    font-size: 1.3rem;
   }
 
   .burger.fas {

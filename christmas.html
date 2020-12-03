@@ -31,24 +31,12 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/christmas.css" />
 
     <link rel="icon" type="image/png" href="assets/tab_icon.png" />
     <script
       src="https://kit.fontawesome.com/7307532b1d.js"
       crossorigin="anonymous"
-    ></script>
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
     ></script>
   </head>
 
@@ -67,7 +55,9 @@
       <nav id="mobileNav">
         <ul class="menu-open">
           <li>
-            <a class="main-font" href="./christmas.html">🎄 Christmas Fayre</a>
+            <a class="main-font active" href="./christmas.html"
+              >🎄 Christmas Fayre</a
+            >
           </li>
           <li>
             <a class="main-font" href="./index.html">Home</a>
@@ -75,7 +65,7 @@
           <li>
             <a class="main-font" href="./contact.html">Get in Touch</a>
           </li>
-          <li class="active">
+          <li>
             <a class="main-font" href="./workshop.html">Crafting Space</a>
           </li>
           <li>
@@ -87,53 +77,35 @@
 
       <i onclick="toggleNavbar()" class="burger fas fa-bars"></i>
     </header>
+    <div class="snow-wrapper">
+      <div class="more-snow"></div>
 
-    <main class="wrapper">
-      <h1 class="main-font">How and where to find us</h1>
-
-      <div class="info">
-        <div>
-          <h3 class="main-font">Address</h3>
-          <address>
+      <main class="wrapper christmas">
+        <header>
+          <h1 class="main-font">Christmas Fayre</h1>
+        </header>
+        <section>
+          <div>
+            <p><strong>Saturday 12th Dec 10:00am - 4:30pm</strong></p>
             <p>
-              Unit 6, Station Industrial Estate, The Homend, Ledbury HR8 1AR
+              Handmade Christmas <span>decorations and presents</span>, knitting
+              accessories perfect for Christmas gifts plus lots of
+              <span>lovely yarn</span>.
             </p>
-          </address>
-
-          <h3 class="main-font">Hours</h3>
-          <p>Monday: Closed</p>
-          <p>Tuesday: 10am–4:30pm</p>
-          <p>Wednesday: 10am–4:30pm</p>
-          <p>Thursday: 10am–4:30pm</p>
-          <p>Friday: 10am–4:30pm</p>
-          <p>Saturday: 10am–4:30pm</p>
-          <p>Sunday: Closed</p>
-
-          <h3 class="main-font">Phone</h3>
-          <address>
-            <a href="tel:+447854863312"
-              ><i class="fas fa-phone"></i>07854 863312</a
-            >
-          </address>
-
-          <h3 class="main-font">Email</h3>
-          <address>
-            <a href="mailto:railwayyarns@hotmail.com?subject = Enquiry">
-              <i class="fas fa-envelope-square"></i>
-              railwayyarns@hotmail.com
-            </a>
-          </address>
-
-          <h3 class="main-font">Instagram</h3>
-          <a href="https://www.instagram.com/railwayyarns/">
-            <i class="fas fa-at"></i>
-            railwayyarns
-          </a>
-        </div>
-        <div id="mapid"></div>
-      </div>
-    </main>
-
+            <p>
+              All are welcome to join me <a href="./contact.html">here</a> for a
+              wooly Christmas, celebrating Railway Yarns first Christmas!
+            </p>
+            <p>
+              All Covid-19 restrictions and regulations followed - you may be
+              asked to wait outside if the shop is busy.
+            </p>
+            <p>Plenty of free parking available</p>
+            <img alt="Christmas decorations" src="assets/christmas.jpg" />
+          </div>
+        </section>
+      </main>
+    </div>
     <footer>
       <ul>
         <li>
@@ -162,7 +134,5 @@
       </ul>
     </footer>
   </body>
-
-  <script src="js/map.js"></script>
   <script src="js/navBar.js"></script>
 </html>

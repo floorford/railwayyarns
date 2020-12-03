@@ -1,0 +1,75 @@
+.christmas span,
+.christmas .main-font {
+  color: #dc3c3c;
+}
+
+.christmas img {
+  height: 500px;
+  width: 500px;
+  margin: 3rem auto;
+  display: block;
+}
+
+.snow-wrapper {
+  background-color: #000;
+  background-image: url(https://images.unsplash.com/photo-1531972497489-8eb337acf6e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=193456e9385b553747a5e0f0cbc7badb&auto=format&fit=crop&w=1334&q=80);
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.christmas {
+  position: relative;
+}
+
+.christmas header {
+  padding-top: 2rem;
+}
+
+.more-snow:before,
+.more-snow:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(http://www.freepngimg.com/download/winter_snow/4-2-white-snow-png.png);
+  background-size: 30%;
+  animation-name: MOVE-BG;
+  animation-duration: 500s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.more-snow:before {
+  filter: blur(4px);
+  opacity: 0.4;
+  background-size: 60%;
+  animation-duration: 400s;
+}
+.more-snow:after {
+  filter: blur(2px);
+  opacity: 0.4;
+  background-image: url(https://laviwebfiles.com/stage/codepen/4-2-white-snow-png.png);
+  background-size: 70%;
+  animation-duration: 100s;
+}
+
+@keyframes MOVE-BG {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .christmas img {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  .snow-wrapper {
+    height: 636px;
+  }
+}
