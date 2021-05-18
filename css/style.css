@@ -47,17 +47,27 @@ i {
   color: var(--brand-pink);
 }
 
-i {
+i,
+footer img {
   padding: 0 0.5rem;
 }
 
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 a:hover {
   color: var(--brand-pink);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.green {
+  color: var(--brand-green);
 }
 
 h3 ~ a:hover {
@@ -87,6 +97,10 @@ nav a {
   text-align: center;
 }
 
+.flex {
+  display: flex;
+}
+
 .button:hover {
   border: 2px solid #a97a92;
   background-color: #a97a92;
@@ -98,6 +112,15 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
+}
+
+footer li {
+  margin-right: 0.5rem;
+}
+
+.insta-logo {
+  width: 16px;
+  height: 16px;
 }
 
 ul {

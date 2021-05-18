@@ -7,17 +7,17 @@
     <title>Railway Yarns</title>
     <meta
       name="description"
-      content="Wool shop with a rentable crafting space based in Ledbury, Herefordshire UK. Selling a wide range of yarns and tools"
+      content="We stock a wide range of yarns, from the UK, Europe and America"
     />
     <meta
       name="keywords"
-      content="yarn,wool,knitting,crocheting,crafting,craft,ledbury,shop"
+      content="yarn,wool,knitting,crocheting,crafting,craft,ledbury,shop,store,fabric,textiles,sewing,herefordshire"
     />
 
     <!-- Twitter Card data -->
     <meta
       name="twitter:card"
-      value="Wool shop with a rentable crafting space based in Ledbury, Herefordshire UK. Selling a wide range of yarns and tools"
+      value="We stock a wide range of yarns, from the UK, Europe and America"
     />
 
     <!-- Open Graph data -->
@@ -27,7 +27,7 @@
     <meta property="og:image" content="assets/logo.png" />
     <meta
       property="og:description"
-      content="Wool shop with a rentable crafting space based in Ledbury, Herefordshire UK. Selling a wide range of yarns and tools"
+      content="We stock a wide range of yarns, from the UK, Europe and America"
     />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -74,6 +74,14 @@
     </header>
 
     <main class="wrapper">
+      <section>
+        <h3>Now Available!</h3>
+        <div class="flex">
+          <img alt="Baby wool" src="assets/babywool.jpeg" />
+          <img alt="Baby wool" src="assets/magazine.jpeg" />
+        </div>
+      </section>
+
       <header>
         <h1 class="main-font">Wool list</h1>
         <p>
@@ -238,6 +246,21 @@
             </div>
           </div>
         </article>
+
+        <article onclick="openLightbox();toSlide(12)">
+          <img alt="King Cole" src="assets/kingcolelogo.png" />
+          <div class="middle">
+            <div class="text">
+              <h2>King Cole</h2>
+
+              <p>
+                For over 80 years, King Cole has built a reputation for
+                supplying the highest quality knitting wool and yarn to
+                professional and hobbyist knitters worldwide.
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
 
       <div id="Lightbox" class="modal">
@@ -332,6 +355,22 @@
             />
             <p>Woolyknit Wool</p>
           </div>
+          <div class="slide">
+            <img
+              src="assets/kingcole.jpeg"
+              class="image-slide"
+              alt="King Cole Wool"
+            />
+            <p>King Cole Wool</p>
+          </div>
+          <div class="slide">
+            <img
+              src="assets/kingcole2.jpeg"
+              class="image-slide"
+              alt="King Cole Wool"
+            />
+            <p>King Cole Wool</p>
+          </div>
 
           <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
           <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -425,6 +464,22 @@
                 alt="Woolyknit Wool"
               />
             </div>
+            <div class="col">
+              <img
+                src="assets/kingcole.jpeg"
+                class="modal-preview hover-shadow"
+                onclick="toSlide(12)"
+                alt="King Cole Wool"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/kingcole2.jpeg"
+                class="modal-preview hover-shadow"
+                onclick="toSlide(13)"
+                alt="King Cole Wool"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -450,7 +505,11 @@
         </li>
         <li>
           <a href="https://www.instagram.com/railwayyarns/">
-            <i class="fas fa-at"></i>
+            <img
+              class="insta-logo"
+              alt="instagram logo"
+              src="assets/insta.png"
+            />
             railwayyarns
           </a>
         </li>

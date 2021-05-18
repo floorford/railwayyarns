@@ -21,6 +21,10 @@ section {
   min-height: 75vh;
 }
 
+.button {
+  margin: 0;
+}
+
 @media screen and (max-width: 1024px) {
   .workshop {
     min-height: 83vh;
