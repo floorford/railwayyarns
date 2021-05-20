@@ -45,6 +45,7 @@
 
 .flex > div {
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 .insta-wrapper {
@@ -53,6 +54,15 @@
   flex-direction: column;
   align-items: center;
 }
+
+.classes {
+  align-items: center;
+}
+
+.classes img {
+  height: 42vh;
+}
+
 @media screen and (max-width: 1440px) {
   .content-wrapper {
     top: 10%;
@@ -84,6 +94,10 @@
   #instagram-feed {
     max-width: 80%;
   }
+
+  .classes img {
+    height: 34vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -98,9 +112,12 @@
   nav a {
     padding: 1rem;
   }
+  .classes img {
+    height: 36vh;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .jumbo h1 {
     font-size: 1.5rem;
   }
@@ -124,14 +141,15 @@
   #instagram-feed {
     margin: 0 auto;
   }
-  .insta-wrapper {
-    min-height: 296px;
-  }
-  .insta-logo {
-    width: 40px;
-  }
+
   #instagram-feed {
     max-width: 95%;
+  }
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .flex img {
+    height: 62vh;
   }
 }
 

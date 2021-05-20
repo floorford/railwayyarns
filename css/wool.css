@@ -72,10 +72,6 @@ h2 {
   color: var(--brand-pink);
 }
 
-section {
-  padding-left: 1rem;
-}
-
 .flex {
   justify-content: space-evenly;
 }
@@ -114,6 +110,9 @@ section {
     margin: 1rem 0 0 0;
     font-size: 1.2rem;
   }
+  .flex img {
+    height: 325px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -135,5 +134,8 @@ section {
   }
   .text p:first-of-type {
     font-size: 1rem;
+  }
+  .flex img {
+    height: 205px;
   }
 }
