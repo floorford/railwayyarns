@@ -52,14 +52,26 @@ footer img {
   padding: 0 0.5rem;
 }
 
-a {
+nav a, footer a, .info a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+  font-weight: initial;
+}
+
+nav a:hover, footer a:hover, .info a:hover {
+  color: var(--brand-pink);
+}
+
+a {
+  text-decoration: none;
+  color: var(--brand-pink);
+  cursor: pointer;
+  font-weight: 800;
 }
 
 a:hover {
-  color: var(--brand-pink);
+  color: var(--brand-green);
 }
 
 h1 {
