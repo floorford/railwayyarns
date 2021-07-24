@@ -71,7 +71,9 @@
 
 @media screen and (max-width: 1024px) {
   .content-wrapper {
-    top: 25%;
+    top: 14%;
+    left: 17%;
+    right: 17%;
   }
 
   .img-wrapper {
@@ -79,8 +81,8 @@
   }
 
   .jumbo img {
-    width: 50%;
-    height: 50%;
+    width: 33.3%;
+    height: 33.3%;
   }
 
   .button {
@@ -102,9 +104,9 @@
 
 @media screen and (max-width: 768px) {
   .content-wrapper {
-    top: 17%;
-    left: 12%;
-    right: 12%;
+    top: 2%;
+    left: 9%;
+    right: 9%;
   }
   .header-main a {
     font-size: 1rem;
@@ -115,24 +117,30 @@
   .classes img {
     height: 36vh;
   }
+  .jumbo h1 {
+    padding: 1rem 2rem 0rem 2rem;
+  }
+  .content-wrapper section {
+    margin: 2rem 0;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .jumbo h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .content-wrapper section {
     font-size: 1.1rem;
     margin: 0;
   }
   .content-wrapper {
-    top: 5%;
+    top: -4%;
     left: 5%;
     right: 5%;
   }
   .button {
     font-size: 1rem;
-    margin: 1rem 0;
+    margin: 0;
     min-width: auto;
   }
   .instagram_profile_image {
@@ -154,12 +162,15 @@
 }
 
 @media screen and (max-width: 320px) {
+  .content-wrapper {
+    top: 4%;
+  }
   .jumbo h1 {
     padding: 0;
   }
   .jumbo {
     overflow: hidden;
-    height: 70vh;
+    height: 56vh;
   }
   .content-wrapper .button {
     padding: 0.69rem;

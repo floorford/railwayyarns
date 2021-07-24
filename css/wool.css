@@ -77,7 +77,7 @@ h2 {
 }
 
 .flex img {
-  height: 425px;
+  height: 352px;
 }
 
 .wool-grid {
@@ -90,6 +90,10 @@ h2 {
   column-gap: 2vw;
   align-items: center;
   padding-top: 2rem;
+}
+
+.now-available > * {
+  width: 30%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,7 +115,7 @@ h2 {
     font-size: 1.2rem;
   }
   .flex img {
-    height: 325px;
+    height: 230px;
   }
 }
 
