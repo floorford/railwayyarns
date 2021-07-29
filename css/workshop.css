@@ -18,7 +18,9 @@ section {
 }
 
 .workshop {
-  min-height: 75vh;
+  width: 90%;
+  flex-grow: 1;
+  margin: auto;
 }
 
 .button {

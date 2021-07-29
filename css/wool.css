@@ -1,3 +1,9 @@
+.wrapper {
+  width: 90%;
+  flex-grow: 1;
+  margin: auto;
+}
+
 article {
   position: relative;
   display: flex;
@@ -128,7 +134,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .wool-grid {
     width: 98%;
     grid-template-columns: repeat(1, 1fr);
@@ -141,5 +147,12 @@ h2 {
   }
   .flex img {
     height: 205px;
+  }
+  .now-available {
+    flex-direction: column;
+  }
+  .now-available > * {
+    width: unset;
+    margin: 1rem;
   }
 }

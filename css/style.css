@@ -21,6 +21,8 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--brand-black);
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -52,14 +54,18 @@ footer img {
   padding: 0 0.5rem;
 }
 
-nav a, footer a, .info a {
+nav a,
+footer a,
+.info a {
   text-decoration: none;
   color: black;
   cursor: pointer;
   font-weight: initial;
 }
 
-nav a:hover, footer a:hover, .info a:hover {
+nav a:hover,
+footer a:hover,
+.info a:hover {
   color: var(--brand-pink);
 }
 
@@ -88,11 +94,6 @@ h3 ~ a:hover {
 
 nav a {
   padding: 1rem 2rem;
-}
-
-.wrapper {
-  max-width: 80%;
-  margin: 1rem auto;
 }
 
 .button {
