@@ -16,6 +16,25 @@
   opacity: 0.5;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.grid div > img {
+  height: 30vh;
+  align-self: center;
+}
+
+.grid > div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: -1px 2px 3px 2px #7b7b6c24;
+}
+
 .img-wrapper {
   display: flex;
   flex-direction: row;
@@ -61,7 +80,7 @@
 }
 
 .classes img {
-  height: 42vh;
+  height: 65vh;
 }
 
 @media screen and (max-width: 1440px) {
@@ -80,6 +99,11 @@
     top: 14%;
     left: 17%;
     right: 17%;
+  }
+
+  .wrapper {
+    max-width: unset;
+    flex-direction: column-reverse;
   }
 
   .img-wrapper {
@@ -165,8 +189,8 @@
   .flex img {
     height: 62vh;
   }
-  .wrapper {
-    max-width: unset;
+  .grid {
+    grid-template-columns: 1fr;
   }
   .classes {
     align-items: unset;
@@ -174,6 +198,9 @@
   .classes img {
     width: 100%;
     height: auto;
+  }
+  .button {
+    padding: 0.5rem 1rem;
   }
 }
 
