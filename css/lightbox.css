@@ -54,7 +54,7 @@
 .slide {
   display: none;
   margin: 3% auto;
-  max-height: 98vw;
+  max-height: 72vh;
 }
 
 .slide p {
@@ -71,8 +71,8 @@
 }
 
 .modal-preview {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
 }
 
@@ -113,6 +113,7 @@ img.hover-shadow {
   right: 17%;
   font-size: 35px;
   font-weight: bold;
+  z-index: 3;
 }
 
 .close:hover,

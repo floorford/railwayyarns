@@ -13,7 +13,7 @@
 .jumbo img {
   width: 25%;
   height: 25%;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .grid {
@@ -45,7 +45,7 @@
 .content-wrapper {
   position: absolute;
   z-index: 1;
-  top: 25%;
+  top: 15%;
   left: 20%;
   right: 20%;
   color: white;
@@ -64,8 +64,15 @@
 }
 
 .flex > div {
+  width: 50%;
   padding: 2rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex > div p {
+  flex-grow: 1;
 }
 
 .insta-wrapper {
@@ -75,17 +82,26 @@
   align-items: center;
 }
 
-.classes {
-  align-items: center;
+.classes .button {
+  margin: 1rem 0;
+  width: fit-content;
+  display: block;
 }
 
-.classes img {
-  height: 65vh;
+.images-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.images-section img {
+  height: calc(100vw / 4);
+  margin: 0.5rem;
 }
 
 @media screen and (max-width: 1440px) {
   .content-wrapper {
-    top: 5%;
+    top: 8%;
     right: 15%;
     left: 15%;
   }
@@ -96,18 +112,21 @@
 
 @media screen and (max-width: 1024px) {
   .content-wrapper {
-    top: 14%;
-    left: 17%;
-    right: 17%;
+    top: 10%;
+    right: 7%;
+    left: 7%;
+  }
+
+  .content-wrapper section {
+    margin: 1rem 0;
+  }
+
+  .content-wrapper p {
+    margin: 0;
   }
 
   .wrapper {
     max-width: unset;
-    flex-direction: column-reverse;
-  }
-
-  .img-wrapper {
-    flex-wrap: wrap;
   }
 
   .jumbo img {
@@ -119,10 +138,6 @@
     font-size: 1.5rem;
   }
 
-  .content-wrapper section {
-    margin: 4rem 0;
-    font-size: 1.8rem;
-  }
   #instagram-feed {
     max-width: 80%;
   }
@@ -140,6 +155,9 @@
   }
   .header-main a {
     font-size: 1rem;
+  }
+  .img-wrapper {
+    flex-wrap: wrap;
   }
   nav a {
     padding: 1rem;
@@ -165,8 +183,8 @@
   }
   .content-wrapper {
     top: -4%;
-    left: 5%;
-    right: 5%;
+    left: 3%;
+    right: 3%;
   }
   .button {
     font-size: 1rem;
@@ -179,28 +197,28 @@
   #instagram-feed {
     margin: 0 auto;
   }
-
   #instagram-feed {
     max-width: 95%;
   }
   .flex {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .flex > div {
+    width: 100%;
+    padding: 0 1rem;
   }
   .flex img {
     height: 62vh;
   }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .classes {
-    align-items: unset;
-  }
-  .classes img {
-    width: 100%;
-    height: auto;
-  }
   .button {
     padding: 0.5rem 1rem;
+  }
+  .images-section img {
+    height: calc(100vw / 2);
+    width: 45%;
+  }
+  .content-wrapper section {
+    margin: 0.5rem;
   }
 }
 

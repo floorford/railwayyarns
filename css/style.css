@@ -246,7 +246,7 @@ ul a:hover {
   /* change post fair */
   nav a,
   nav a.main-font {
-    padding: 2rem 1rem;
+    padding: 0 1rem;
     font-size: 1.3rem;
   }
 

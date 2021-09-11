@@ -14,7 +14,7 @@
 }
 
 .wrapper .main-font {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .wrapper .info h3 {
@@ -37,6 +37,24 @@ h3 {
 
 h3:first-of-type {
   margin-top: 1rem;
+}
+
+.photos {
+  display: flex;
+  margin: 1rem 0;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.photos div {
+  height: 100%;
+  width: 32%;
+}
+
+.photos img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
