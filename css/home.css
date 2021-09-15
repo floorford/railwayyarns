@@ -11,8 +11,8 @@
 }
 
 .jumbo img {
-  width: 25%;
-  height: 25%;
+  width: 20%;
+  height: 20%;
   opacity: 0.4;
 }
 
@@ -149,7 +149,7 @@
 
 @media screen and (max-width: 768px) {
   .content-wrapper {
-    top: 2%;
+    top: 6%;
     left: 9%;
     right: 9%;
   }
