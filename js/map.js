@@ -1,4 +1,4 @@
-var mymap = L.map("mapid").setView([52.044913, -2.425082], 15);
+var mymap = L.map("mapid").setView([52.037310, -2.423180], 15);
 
 L.tileLayer(
   "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
@@ -14,4 +14,4 @@ L.tileLayer(
   }
 ).addTo(mymap);
 
-var marker = L.marker([52.044913, -2.425082]).addTo(mymap);
+var marker = L.marker([52.037310, -2.423180]).addTo(mymap);
