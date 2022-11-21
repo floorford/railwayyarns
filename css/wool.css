@@ -1,5 +1,5 @@
 .wrapper {
-  margin: 1rem 2rem;
+  margin: 2rem 10rem;
 }
 
 article {
@@ -23,6 +23,22 @@ article img {
   backface-visibility: hidden;
 }
 
+.sub-nav {
+  background-color: var(--brand-grey);
+  padding: 3rem 10rem;
+}
+
+.sub-nav a {
+  color: var(--brand-black);
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.sub-nav a:hover {
+  color: var(--brand-pink);
+}
+
 .middle {
   opacity: 0;
   position: absolute;
@@ -34,6 +50,8 @@ article img {
   height: 100%;
   display: flex;
   flex-direction: column;
+  height: 220px;
+  width: 220px;
 }
 
 .middle a {
@@ -56,11 +74,15 @@ article:hover .middle {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
+  padding: 16px;
   flex-direction: column;
   background-color: var(--brand-green);
-  box-sizing: border-box;
   flex: 1 1 0;
+
+}
+
+.text h2 {
+  margin: 0;
 }
 
 .wrapper h1 {
@@ -86,7 +108,7 @@ h2 {
 
 .wool-grid {
   display: grid;
-  width: 85%;
+  width: 60vw;
   margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -96,28 +118,47 @@ h2 {
   padding-top: 2rem;
 }
 
-.now-available > * {
+.now-available>* {
   width: 30%;
+}
+
+#crochet {
+  margin-top: 6rem;
+}
+
+#crochet .middle {
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
   .wrapper {
-    min-height: 83vh;
+    margin: 2rem;
   }
+
+  .sub-nav {
+    padding: 3rem 2rem;
+  }
+
+
   .wool-grid {
     width: 79%;
   }
+
   .text {
     height: 100%;
     padding: 0.5rem;
   }
+
   .text p:first-of-type {
     font-size: 0.8rem;
   }
+
   h2 {
     margin: 1rem 0 0 0;
     font-size: 1.2rem;
   }
+
   .flex img {
     height: 230px;
   }
@@ -127,6 +168,7 @@ h2 {
   .wrapper {
     min-height: unset;
   }
+
   .wool-grid {
     width: 95%;
   }
@@ -140,22 +182,39 @@ h2 {
     padding-top: 1rem;
     row-gap: 1vw;
   }
+
   .text p:first-of-type {
     font-size: 1rem;
   }
+
   .flex img {
     height: 205px;
   }
+
   .now-available {
     flex-direction: column;
   }
-  .now-available > * {
+
+  .now-available>* {
     width: unset;
     margin: 1rem;
   }
+
+  .sub-nav {
+    padding: 1rem 2rem;
+}
+
+
+  .sub-nav a {
+    margin: 16px 0;
+    display: block;
+    padding: 0;
+}
+
   .wrapper {
     margin: 0 2rem;
   }
+
   .wrapper h1 {
     padding: 0;
   }

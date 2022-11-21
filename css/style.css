@@ -12,17 +12,17 @@
   --brand-black: #36322b;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--brand-black);
   display: flex;
   flex-direction: column;
+  height: -webkit-fill-available;
+}
+
+main {
+  height: inherit;
 }
 
 .logo {
@@ -41,6 +41,10 @@ body {
 .header-main a {
   font-size: 1.3rem;
   color: var(--brand-green);
+}
+
+.header-main img {
+  width: 100%;
 }
 
 .main-font,
