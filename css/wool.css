@@ -50,8 +50,6 @@ article img {
   height: 100%;
   display: flex;
   flex-direction: column;
-  height: 220px;
-  width: 220px;
 }
 
 .middle a {
